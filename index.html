@@ -9,19 +9,37 @@
 
 </head>
 <body>
-<h1>Pixel Watch</h1>
-<h2>Web XR</h2>
-<model-viewer class="modle" src="pixel watch.glb" environment-image="hdri.hdr" ar ar-modes="webxr" camera-controls touch-action="pan-y" alt="Pixel watch model" xr-environment></model-viewer>
-<h1>Pixel Watch</h1>
-<h2>Web XR</h2>
-<model-viewer class="modle" src="sphere-mirror-4k-materialtest.glb" environment-image="hdri.hdr" ar camera-controls touch-action="pan-y" alt="Pixel watch model" xr-environment></model-viewer>
-<h2>Web XR</h2>
-<model-viewer class="modle" src="sphere.glb" environment-image="hdri.hdr" ar camera-controls touch-action="pan-y"   alt="Pixel watch model" xr-environment></model-viewer>
 
+  <div class="g">
+  <h1>Pixel Watch</h1>
+  <h2>Web XR</h2>
+  <model-viewer class="modle" disable-zoom src="pixel watch.glb" environment-image="hdri.hdr" ar ar-modes="scene-viewer webxr" camera-controls touch-action="pan-y" alt="Pixel watch model" xr-environment></model-viewer>
+  <h2>scene viewer</h2>
+  <model-viewer class="modle"  disable-zoom src="pixel watch.glb" environment-image="hdri.hdr" ar ar-modes="scene-viewer webxr" camera-controls touch-action="pan-y" alt="Pixel watch model" xr-environment></model-viewer>
+  <h1>Mirror Sphere</h1>
+  <h2>Web XR</h2>
+  <p>Model from <a href="https://sketchfab.com/3d-models/sphere-mirror-4k-materialtest-37c76b996e1040f8a41a0f4bc21f3e76" target="_blank">here.</a>
+  </p>
+  <h2>Web XR</h2>
+  <p>Model from <a href="https://sketchfab.com/3d-models/sphere-mirror-4k-materialtest-37c76b996e1040f8a41a0f4bc21f3e76" target="_blank">here.</a>
+  </p>
+  <model-viewer class="modle" disable-zoom src="sphere-mirror-4k-materialtest.glb" environment-image="hdri.hdr" ar camera-controls touch-action="pan-y" alt="Pixel watch model" xr-environment></model-viewer>
+  <h2>Web XR</h2>
+  <p>Model from <a href="https://sketchfab.com/3d-models/sphere-glass-4k-materialtest-489b2307e0e4459b8bdccdc8c5fbc919" target="_blank">here.</a>
+
+  <model-viewer class="modle" disable-zoom src="sphere.glb" environment-image="hdri.hdr" ar camera-controls touch-action="pan-y"   alt="Pixel watch model" xr-environment></model-viewer>
+
+</div>
     <style>
+      .g{
+
+        margin:0px 100px;
+
+      }
+
     .modle{
         width: 100%;
-        height: 100vw;
+        height: 400px;
         }
     #lazy-load-poster {
       position: absolute;
